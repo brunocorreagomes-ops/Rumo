@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="theme-color" content="#122c2d"/><meta name="description" content="Central pessoal de foco, caixa, projetos e preparação TJSP"/>
+<link rel="icon" href="icon.svg" type="image/svg+xml"/><link rel="manifest" href="manifest.webmanifest"/>
+<title>RUMO — Central de Prioridades</title><link rel="stylesheet" href="styles.css"/>
+</head><body>
+<div id="app">
+<header class="topbar"><div class="brand"><span class="brand-mark">R<span class="brand-dot">.</span></span><div><div class="brand-name">RUMO</div><div class="brand-sub">CENTRAL DE PRIORIDADES</div></div></div><div class="top-actions"><span class="today-label" id="today-label"></span><button class="icon-btn" id="settings-btn" aria-label="Configurações" title="Dados e preferências">⚙</button></div></header>
+<main class="main" id="view" aria-live="polite"></main>
+<nav class="bottom-nav" aria-label="Navegação principal">
+<button data-tab="home" class="active"><span class="nav-icon">◫</span><span>Início</span></button>
+<button data-tab="projects"><span class="nav-icon">▦</span><span>Matriz</span></button>
+<button data-tab="tasks"><span class="nav-icon">☑</span><span>Hoje</span></button>
+<button data-tab="study"><span class="nav-icon">◧</span><span>TJSP</span></button>
+<button data-tab="cash"><span class="nav-icon">◈</span><span>Caixa</span></button>
+</nav>
+</div>
+<dialog id="modal"><div class="modal-head"><h2 id="modal-title">Detalhes</h2><button class="icon-btn" id="close-modal" aria-label="Fechar">✕</button></div><div id="modal-body"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="seed.js"></script><script src="main.js"></script>
+</body></html>
